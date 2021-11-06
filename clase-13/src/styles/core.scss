@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  background: #F6F7FB;
+}
+.wrapper{
+  max-width: 980px;
+  margin: auto auto;
+}
+
+@import "./atoms/atoms";
+@import "./molecules/molecules";
+@import "./organism/organism";
+@import "./pages/rwd";

@@ -1,0 +1,23 @@
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.cards {
+  border: 1px black;
+  height: 28rem;
+  border: 2px solid black;
+}
+
+.cards-space-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=reto.css.map */

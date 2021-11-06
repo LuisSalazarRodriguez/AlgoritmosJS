@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RETO 2021-10-15</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: arial;
+    }
+
+    header {
+      background: #00AAB5;
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      padding: 10px;
+      justify-content: space-between;
+    }
+
+    footer {
+      background: #00AAB5;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+    }
+
+    main>section {
+      flex-grow: 1;
+      background: pink;
+    }
+
+    .flex-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .flex-header-codigo {
+      padding: 10px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      color: #FFFFFF;
+    }
+
+    .flex-header-bytecsup {
+      padding: 10px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      margin-right: 130px;
+      color: #FFFFFF;
+    }
+    .flex-header-a {
+      padding: 10px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      /* margin-right: 130px; */
+      color: #FFFFFF;
+      display: flex;
+      /* justify-content: space-between; */
+      align-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="flex-header">
+      <div class="flex-header-codigo">Codigo</div>
+      <div class="flex-header-bytecsup">by tecsup</div>
+    </div>
+    <div class="flex-header-a">
+      <a>Quien soy</a>
+      <a>Mis Skills</a>
+      <a>Servicios</a>
+      <a>Portafolio</a>
+      <a>Clientes</a>
+      <a>Contacto</a>
+    </div>
+  </header>
+  <main>
+    <section>Section 1</section>
+    <section>Section 2</section>
+    <section>Section 3</section>
+    <section>Section 4</section>
+    <section>Section 5</section>
+    <section>Section 6</section>
+  </main>
+  <footer>
+    FOOTER
+  </footer>
+</body>
+
+</html>

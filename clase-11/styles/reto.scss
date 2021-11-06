@@ -1,0 +1,21 @@
+
+$font-size-h1: 24px;
+$font-size-h2: 18px;
+
+h1{
+  font-size: $font-size-h1;
+}
+h2{
+  font-size: $font-size-h2;
+}
+.cards{
+  border: 1px black;
+  // width: 100px;
+  height: 28rem;
+  border: 2px solid black;
+
+}
+.cards-space-between{
+  display: flex;
+  justify-content: space-between;
+}

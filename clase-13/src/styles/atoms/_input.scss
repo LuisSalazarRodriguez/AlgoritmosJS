@@ -1,0 +1,8 @@
+.input {
+  border:1px solid grey;
+  padding: 10px 15px;  
+  width: 20rem;  
+  &__sm{
+    width: 15rem;
+  }
+}

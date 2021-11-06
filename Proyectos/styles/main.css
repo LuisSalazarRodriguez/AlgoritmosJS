@@ -1,0 +1,122 @@
+body {
+  font-size: 13px;
+  font-family: Arial;
+}
+/*Etiqueta tipo selector simple header*/
+header {
+  background: #00af1c;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #fff;
+}
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+header nav ul li {
+  float: right;
+}
+header nav ul li a {
+  display: block;
+  color: white !important;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+header .header-logo {
+  font-size: 24px;
+  display: block;
+  margin-left: 10px;
+}
+/*Etiqueta tipo selector simple main/section */
+section {
+  margin: 50px 30px;
+}
+section h1{
+  text-align: justify;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+section p{
+  text-align: left;
+  margin-bottom: 40px;
+}
+/*Etiqueta tipo clase, section h1*/
+.section-h1-home{
+  color: #3b06d2;
+}
+.section-h1-servicio{
+  color: #D206B2;
+}
+.section-h1-portafolio{
+  color: #AAD206;
+}
+.section-h1-contacto{
+  color: #06D2C6;
+}
+/*Etiqueta tipo clase, section imagen*/
+.section-img{
+  display: flex;
+  justify-content: space-evenly;
+}
+/*Etiqueta tipo selector simple main/section */
+section nav ul li {
+  margin: 20px 30px 15px;
+  font-weight: 700;
+
+}
+section nav li:nth-child(1) a {
+  color: orange;
+}
+nav li:nth-child(2) a {
+  color: red;
+}
+nav li:nth-child(3) a {
+  color: blue;
+}
+nav li:nth-child(4) a {
+  color: green;
+}
+/*Etiqueta tipo clase, section formulario contacto*/
+.frm-contact {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 30px 90PX;
+}
+.frm-name {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+}
+.frm-detalle {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.frm-enviar {
+  background-color: #fff;
+  border-color: #22a900;
+  border-style: double;
+  width: 15%;
+  padding: 15px 30px;
+  color: #22a900;
+  font-weight: 500;
+  margin-bottom: 9px;
+}
+/*Etiqueta tipo selector simple footer */
+footer {
+  background-color: #00af1c;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  color: #fff;
+}

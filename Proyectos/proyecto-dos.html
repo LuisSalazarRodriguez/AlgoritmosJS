@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Dos</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: arial;
+    }
+
+    header {
+      display: flex;
+      width: 100%;
+      height: 138px;
+      padding: 0 15px;
+      background: #00AAB5;
+      justify-content: space-between;
+      color: #FFFFFF;
+    }
+
+    header h1 {
+      font-size: 40px;
+    }
+
+    header h3 {
+      font-size: 20px;
+    }
+
+    header>div {
+      display: flex;
+      align-items: center;
+    }
+
+    header ul {
+      display: flex;
+      list-style: none;
+    }
+
+    header li {
+      margin-right: 2rem;
+    }
+
+    header a {
+      color: #FFFFFF;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .main-section1-img {
+      width: 100%;
+      height: 40rem;
+      background-image: url("./image/img1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-section1-codigo {
+      font-size: 50px;
+      color: #fff;
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .main-section1-nombre {
+      font-size: 30px;
+      text-align: center;
+      width: 15rem;
+      padding: 2rem 2rem;
+      margin: 19rem 8rem;
+      background-color: rgba(114, 153, 254, 0.5);
+    }
+
+    /* MY SKYLLS */
+    .main-section2 {
+      background-color: #7299FE;
+      height: 40rem;
+      text-align: center;
+    }
+
+    .main-section2 p {
+      font-size: 30px;
+      color: #b508a3;
+      padding: 3rem 0 1rem;
+    }
+
+    .main-section2-my-skills {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 2rem;
+    }
+
+    .main-section2-my-skills p {
+      color: #fff;
+    }
+
+    .main-section2-grp {
+      color: #fff;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+
+    .main-section2-grp p {
+      font-size: 20px;
+    }
+
+    .main-section2-grp-html-bar1-blanco {
+      background-color: #fff;
+      width: auto;
+      height: 1.4rem;
+      margin-bottom: 2rem;
+      margin: 0 auto;
+    }
+
+    .main-section2-grp-html-bar1-negro {
+      background-color: black;
+      max-width: 80%;
+      height: 1.4rem;
+    }
+
+    .main-section2-grp-html-bar2-blanco {
+      background-color: #fff;
+      width: auto;
+      height: 1.4rem;
+      margin-bottom: 2rem;
+      margin: 0 auto;
+    }
+
+    .main-section2-grp-html-bar2-negro {
+      background-color: black;
+      max-width: 65%;
+      height: 1.4rem;
+    }
+
+    .main-section2-grp-html-bar3-blanco {
+      background-color: #fff;
+      width: auto;
+      height: 1.4rem;
+      margin-bottom: 2rem;
+      margin: 0 auto;
+    }
+
+    .main-section2-grp-html-bar3-negro {
+      background-color: black;
+      max-width: 50%;
+      height: 1.4rem;
+    }
+
+    .main-section2-grp-html-bar4-blanco {
+      background-color: #fff;
+      width: auto;
+      height: 1.4rem;
+      margin-bottom: 2rem;
+      margin: 0 auto;
+    }
+
+    .main-section2-grp-html-bar4-negro {
+      background-color: black;
+      max-width: 40%;
+      height: 1.4rem;
+    }
+
+    .main-section2-grp-html-bar5-blanco {
+      background-color: #fff;
+      width: auto;
+      height: 1.4rem;
+      margin-bottom: 2rem;
+      margin: 0 auto;
+    }
+
+    .main-section2-grp-html-bar5-negro {
+      background-color: black;
+      max-width: 30%;
+      height: 1.4rem;
+    }
+
+    .main-section2-grp-html-bar6-blanco {
+      background-color: #fff;
+      width: auto;
+      height: 1.4rem;
+      margin-bottom: 2rem;
+      margin: 0 auto;
+    }
+
+    .main-section2-grp-html-bar6-negro {
+      background-color: black;
+      max-width: 50%;
+      height: 1.4rem;
+    }
+
+    .main-section2-grp-html-bar7-blanco {
+      background-color: #fff;
+      width: auto;
+      height: 1.4rem;
+      margin-bottom: 2rem;
+      margin: 0 auto;
+    }
+
+    .main-section2-grp-html-bar7-negro {
+      background-color: black;
+      max-width: 40%;
+      height: 1.4rem;
+    }
+
+    .main-section2-grp-html-bar8-blanco {
+      background-color: #fff;
+      width: auto;
+      height: 1.4rem;
+      margin-bottom: 2rem;
+      margin: 0 auto;
+    }
+
+    .main-section2-grp-html-bar8-negro {
+      background-color: black;
+      max-width: 35%;
+      height: 1.4rem;
+    }
+
+    /* SERVICIOS */
+    .main-section3 {
+      background-color: #FB7171;
+      height: 26rem;
+      text-align: center;
+    }
+
+    .main-section3 p {
+      font-size: 30px;
+      color: #b508a3;
+      padding: 3rem 0 1rem;
+    }
+
+    .main-section3-servicios {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main-section3-servicios p {
+      color: #fff;
+    }
+
+    .main-section3-grp {
+      color: #fff;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+
+    .main-section3-grp p {
+      font-size: 20px;
+    }
+
+    /* PORTAFOLIO */
+    .main-section4 {
+      background-color: #FFD233;
+      height: 22rem;
+      text-align: center;
+    }
+
+    .main-section4 p {
+      font-size: 30px;
+      color: #b508a3;
+      padding: 3rem 0 1rem;
+    }
+
+    .main-section4-portafolio {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5rem;
+    }
+
+    .main-section4-portafolio img {
+      margin: -5rem;
+    }
+
+    /* CLIENTES */
+    .main-section5 {
+      background-color: #3F4E62;
+      height: 12rem;
+      text-align: center;
+    }
+
+    .main-section5 p {
+      font-size: 30px;
+      color: #b508a3;
+      padding: 3rem 0 1rem;
+    }
+
+    .main-section5-clientes {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .main-section5-clientes img {
+      width: 7.5rem;
+    }
+
+    /* CONTACTO */
+    .main-section6 {
+      background-color: #16A085;
+      height: 26rem;
+      text-align: center;
+    }
+
+    .main-section6 p {
+      font-size: 30px;
+      color: #CEE000;
+      padding: 3rem 0 1rem;
+    }
+
+    .main-section6-contacto {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 70%;
+      padding: 100px;
+      margin-top: -95px;
+    }
+
+    .main-section6-contacto form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .main-section6-contacto input {
+      display: flex;
+      width: 48%;
+      height: 40px;
+      align-items: center;
+      margin-bottom: 1.4rem;
+    }
+
+    .main-section6-contacto textarea {
+      padding-top: 2.5rem;
+      width: 100%;
+      height: 40px;
+    }
+
+    .main-section6-contacto button {
+      margin-top: 3.6rem;
+      width: 30%;
+      height: 50px;
+      background: #233451;
+      color: #FFFFFF;
+      margin: 1.6rem auto 0;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #00AAB5;
+      display: flex;
+      justify-content: space-between;
+      height: 70px;
+      align-items: center;
+      font-size: 15px;
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+
+    footer p {
+      margin: 10px;
+    }
+
+    @media (max-width:770px) {
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        height: 130px;
+      }
+
+      header ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      header li {
+        margin-bottom: 10px;
+      }
+
+      .main-section6 {
+        height: 31rem;
+        text-align: center;
+      }
+
+      .main-section6-contacto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .main-section6-contacto form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .main-section6-contacto input {
+        width: 100%;
+        height: 40px;
+      }
+
+      .main-section6-contacto textarea {
+        width: 100%;
+      }
+    }
+
+    @media (max-width:650px) {
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        height: 130px;
+      }
+
+      header ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      header li {
+        margin-bottom: 10px;
+      }
+
+      .main-section2 {
+        height: 65rem;
+      }
+
+      .main-section2-my-skills {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main-section3 {
+        height: 60em;
+      }
+
+      .main-section3-servicios {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main-section4 {
+        height: 57rem;
+      }
+
+      .main-section4-portafolio {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main-section5 {
+        height: 20rem;
+      }
+
+      .main-section5-clientes {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main-section6 {
+        height: 31rem;
+        text-align: center;
+      }
+
+      .main-section6-contacto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .main-section6-contacto form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .main-section6-contacto input {
+        width: 100%;
+        height: 40px;
+      }
+
+      .main-section6-contacto textarea {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Codigo</h1>
+      <h3>by tecsup</h3>
+    </div>
+    <div>
+      <ul>
+        <li><a href="">Quien soy</a></li>
+        <li><a href="">Mis Skills</a></li>
+        <li><a href="">Servicios</a></li>
+        <li><a href="">Portafolio</a></li>
+        <li><a href="">Clientes</a></li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="main-section1-img">
+      <div class="main-section1-codigo">codiGO</div>
+      <div class="main-section1-nombre"> Hola, mi nombre es Luis Salazar </div>
+    </section>
+    <section class="main-section2">
+      <p>My skills</p>
+      <div class="main-section2-my-skills">
+        <div class="main-section2-grp">
+          <p>Html</p>
+          <div class="main-section2-grp-html-bar1-blanco">
+            <div class="main-section2-grp-html-bar1-negro"></div>
+          </div>
+        </div>
+        <div class="main-section2-grp">
+          <p>Javascript</p>
+          <div class="main-section2-grp-html-bar2-blanco">
+            <div class="main-section2-grp-html-bar2-negro"></div>
+          </div>
+        </div>
+        <div class="main-section2-grp">
+          <p>Css</p>
+          <div class="main-section2-grp-html-bar3-blanco">
+            <div class="main-section2-grp-html-bar3-negro"></div>
+          </div>
+        </div>
+        <div class="main-section2-grp">
+          <p>React</p>
+          <div class="main-section2-grp-html-bar4-blanco">
+            <div class="main-section2-grp-html-bar4-negro"></div>
+          </div>
+        </div>
+        <div class="main-section2-grp">
+          <p>Angular</p>
+          <div class="main-section2-grp-html-bar5-blanco">
+            <div class="main-section2-grp-html-bar5-negro"></div>
+          </div>
+        </div>
+        <div class="main-section2-grp">
+          <p>Python</p>
+          <div class="main-section2-grp-html-bar6-blanco">
+            <div class="main-section2-grp-html-bar6-negro"></div>
+          </div>
+        </div>
+        <div class="main-section2-grp">
+          <p>Figma</p>
+          <div class="main-section2-grp-html-bar7-blanco">
+            <div class="main-section2-grp-html-bar7-negro"></div>
+          </div>
+        </div>
+        <div class="main-section2-grp">
+          <p>Node js</p>
+          <div class="main-section2-grp-html-bar8-blanco">
+            <div class="main-section2-grp-html-bar8-negro"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-section3">
+      <p>Servicios</p>
+      <div class="main-section3-servicios">
+        <div class="main-section3-grp">
+          <img src="./image/check.png" alt="">
+          <p>Diseño web</p>
+        </div>
+        <div class="main-section3-grp">
+          <img src="./image/check.png" alt="">
+          <p>Desarrollo web</p>
+        </div>
+        <div class="main-section3-grp">
+          <img src="./image/check.png" alt="">
+          <p>Desarrollo Mobile</p>
+        </div>
+        <div class="main-section3-grp">
+          <img src="./image/check.png" alt="">
+          <p>Diseño UI</p>
+        </div>
+        <div class="main-section3-grp">
+          <img src="./image/check.png" alt="">
+          <p>Diseño UX</p>
+        </div>
+        <div class="main-section3-grp">
+          <img src="./image/check.png" alt="">
+          <p>Metologias Agiles</p>
+        </div>
+      </div>
+    </section>
+    <section class="main-section4">
+      <p>Portafolio</p>
+      <div class="main-section4-portafolio">
+        <div><img src="./image/portafolio-1.png" alt=""></div>
+        <div><img src="./image/portafolio-2.png" alt=""></div>
+        <div><img src="./image/portafolio-3.png" alt=""></div>
+        <div><img src="./image/portafolio-4.png" alt=""></div>
+        <div><img src="./image/portafolio-5.png" alt=""></div>
+        <div><img src="./image/portafolio-6.png" alt=""></div>
+        <div><img src="./image/portafolio-7.png" alt=""></div>
+        <div><img src="./image/portafolio-8.png" alt=""></div>
+      </div>
+    </section>
+    <section class="main-section5">
+      <p>Clientes</p>
+      <div class="main-section5-clientes">
+        <div><img src="./image/clientes-1.png" alt=""></div>
+        <div><img src="./image/clientes-2.png" alt=""></div>
+        <div><img src="./image/clientes-3.png" alt=""></div>
+        <div><img src="./image/clientes-4.png" alt=""></div>
+      </div>
+    </section>
+    <section class="main-section6">
+      <p>Contacto</p>
+      <div class="main-section6-contacto">
+        <form action="#" method="GET"></form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Apellido" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Telefono" required>
+        <textarea name="descripcion" id="descripcion" rows="5" placeholder="Descripcion"></textarea>
+        <button>ENVIAR</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Todos los derechos reservados | 2021</p>
+    <p>Desarrollado por codiGO</p>
+  </footer>
+
+</body>
+
+</html>

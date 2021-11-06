@@ -1,0 +1,29 @@
+.btn {
+  min-width: 120px;  
+  padding: 10px 15px;
+  border: 1px solid grey;
+  background-color: #1E86FF;
+  font-size: 14px;
+  color: #fff;
+}
+.btn-secondary{
+  background-color: #fff;
+  border-color: 1px solid #334680;
+  color:white;  
+  width: 15px;
+  height: 22px;
+  color: #334680;  
+  font-size: 12px;
+  padding: 0;
+}
+.btn-paginado{
+  width: 30px;
+  height: 22px;
+  color: #B7BCCE;  
+  font-size: 12px;
+  padding: 0;
+}
+.btn-seleccionado{
+  border: 1px solid grey;
+  background-color: #1E86FF;
+}

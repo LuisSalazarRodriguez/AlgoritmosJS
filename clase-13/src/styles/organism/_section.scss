@@ -1,0 +1,9 @@
+.section {
+    flex-grow: 1;
+    &__flex{
+      display: flex;
+      flex-direction: column;
+      margin:10px;
+      gap: 25px;
+    }
+  }
